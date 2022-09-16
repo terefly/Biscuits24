@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(138, 209, 247);
+    color: white;
+}
+.task-list {
+    border-left: 2px dotted white;
+}
+.task-list_tasks-conainer {
+    overflow-y: scroll;
+}
+.task-list_tasks-conainer * + * {
+    margin-top: 5px;
+}
+.task {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.5);
+    border-left: 2px solid green;
+}
+.deals_lists-container {
+    display: flex;
+}
