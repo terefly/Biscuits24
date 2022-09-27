@@ -7,21 +7,172 @@
 body {
     background-color: rgb(138, 209, 247);
     color: white;
+    position: relative;
+    font-family: sans-serif;
 }
-.task-list {
+.app {
+    display: flex;
+    width: 100%;
+}
+.aside {
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 100vh;
+    padding: 30px 0;
+}
+.aside_menu * {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+.aside_menu li {
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    
+    transition: all 0.4s;
+    cursor: pointer;
+}
+.aside_menu:last-child {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+.aside_menu li:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.aside_menu li:active {
+    opacity: 0.7;
+}
+
+
+.deals {
+    width: 100%;
+    max-width: min(1200px, calc(100vw - 128px));
+}
+.deals_header {
+    display: flex;
+    max-width: 100%;
+}
+.deals_header h1 {
+    margin-right: auto;
+}
+.deals_lists-container {
+    overflow-x: scroll;
+}
+.deal-list {
     border-left: 2px dotted white;
+    min-width: 200px;
 }
-.task-list_tasks-conainer {
+.deal-list_title {
+    background-color: aquamarine;
+}
+.deal-list_deals-conainer {
     overflow-y: scroll;
+    height: 80vh;
+    margin-top: 15px;
 }
-.task-list_tasks-conainer * + * {
+.deal-list_deals-conainer * + * {
     margin-top: 5px;
 }
-.task {
+.deal {
     background-color: white;
     color: rgba(0, 0, 0, 0.5);
     border-left: 2px solid green;
+    margin-right: 3px;
+    margin-left: 1px;
+    padding: 5px;
+    cursor: pointer;
 }
 .deals_lists-container {
     display: flex;
+}
+.deal-list_title {
+    min-height: 60px;
+}
+.deal-edit {
+    display: flex;
+    color: black;
+}
+.deal-feed {
+    min-width: 300px;
+    height: 500px;
+    padding: 15px;
+    background-color: white;
+    border-left: 1px dashed black;
+}
+.deal-info {
+    color: black;
+    padding: 15px;
+}
+.deal-info_editable {
+    cursor: pointer;
+}
+.new-deal {
+    color: black;
+    padding: 15px;
+}
+.modal {
+    z-index: 1000;
+    background-color: white;
+}
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.tasks{
+    width: 100%;
+    max-width: min(1200px, calc(100vw - 128px));
+}
+.tasks-header {
+    display: flex;
+    justify-content: space-between;
+}
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: white;
+    color: black;
+    border-top: 1px dashed rgba(0, 0, 0, 0.5);
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.5);
+    margin-bottom: 5px;
+}
+.task.done {
+    text-decoration: line-through solid black 1.5px;
+}
+.task-item {
+    border-left: 1px solid rgba(0, 0, 0, 0.5);
+    align-self: stretch;
+}
+.new-task {
+    color: black;
+    padding: 15px;
+}
+
+.new-personnel-form {
+    padding: 15px;
+}
+.personnel {
+    width: 100%;
+    max-width: min(1200px, calc(100vw - 128px));
+
+}
+.personnel_header {
+    display: flex;
+}
+.personnel_header h1 {
+    margin-right: auto;
+} 
+.personnelUnit {
+    margin-top: 5px;
+    border-top: 1px dashed white;
+    border-bottom: 1px dashed white;
 }
