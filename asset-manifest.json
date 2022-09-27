@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Biscuits24/static/css/main.cb617156.css",
+    "main.js": "/Biscuits24/static/js/main.b00dbb7a.js",
+    "index.html": "/Biscuits24/index.html",
+    "main.cb617156.css.map": "/Biscuits24/static/css/main.cb617156.css.map",
+    "main.b00dbb7a.js.map": "/Biscuits24/static/js/main.b00dbb7a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cb617156.css",
+    "static/js/main.b00dbb7a.js"
+  ]
+}
